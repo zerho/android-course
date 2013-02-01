@@ -1,0 +1,17 @@
+<div class="container well" >
+	
+	<span class="page-header">
+	  <h2>Abstract <small>of the course.</small></h2>
+	</span>
+	
+	<div>
+		<table class="table">
+			<tbody ng-repeat="lesson in lessons">
+				<tr>
+					<td>{{lesson.title}}</td><td><a ng-href="{{lesson.deck}}">Slide Deck</td><td><a ng-href="{{lesson.code}}">Source Code</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+</div>

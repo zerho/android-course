@@ -4,8 +4,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('myApp', ['myApp.services']).
   config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/builder', {templateUrl: 'partials/requestbuilder.html', controller: paramsCtrl});
-    $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: MyCtrl2});
-    $routeProvider.when('/info', {templateUrl: 'partials/info.html', controller: infoCtrl});
+    $routeProvider.when('/abstract', {templateUrl: 'partials/abstract.html', controller: abstractCtrl});
+    $routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: infoCtrl});
     $routeProvider.otherwise({templateUrl: 'partials/error.html'});
   }]);
